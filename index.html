@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="INVARIANTS" content="width=device-width, initial-scale=1.0">
+  <title>AR-Based Cultural Heritage Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>AR-Based Cultural Heritage Preservation Platform</h1>
+    <p class="website-link">
+      Website: <a href="https://ar.com" target="_blank">example.com</a>
+    </p>
+    <div class="video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/Uu6PA0383wA?si=bJKCJTaH3coy9aVR" 
+        title="YouTube video" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+<div class="scroller">
+  <div class="scroller__inner">
+    <img src="images/monument1.png" alt="Monument 1">
+    <img src="images/monument2.png" alt="Monument 2">
+    <img src="images/monument3.png" alt="Monument 3">
+    <img src="images/monument4.png" alt="Monument 4">
+    <img src="images/monument5.png" alt="Monument 5">
+    <img src="images/monument6.png" alt="Monument 6">
+    <img src="images/monument7.png" alt="Monument 7">
+
+    <img src="images/monument1.png" alt="Monument 1">
+    <img src="images/monument2.png" alt="Monument 2">
+    <img src="images/monument3.png" alt="Monument 3">
+    <img src="images/monument4.png" alt="Monument 4">
+    <img src="images/monument5.png" alt="Monument 5">
+    <img src="images/monument6.png" alt="Monument 6">
+    <img src="images/monument7.png" alt="Monument 7">
+  </div>
+</div>
+
+  <script>
+    fetch("/track", { method: "POST" })
+      .then(res => res.json())
+      .then(data => console.log("Visitor tracked:", data))
+      .catch(err => console.error("Tracking failed:", err));
+  </script>
+
+</body>
+</html>
